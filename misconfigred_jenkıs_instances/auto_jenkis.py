@@ -1,7 +1,7 @@
-from selenium import webdriver
-from selenium.webdriver.common.keys import  Keys
-from  selenium.webdriver.firefox.options import Options
 import re
+
+from selenium import webdriver
+from selenium.webdriver.firefox.options import Options
 
 options = Options()
 options.headless = False
@@ -29,7 +29,6 @@ for jenkins in jenkins_list:
         element.click()
     except:
         pass
-    if re.findall(r'Manage\sJenkins',driver.page_source):
+    if re.findall(r'Manage\sJenkins', driver.page_source):
         print(jenkins + '= jenkins Misconfigured')
     driver.quit()
-

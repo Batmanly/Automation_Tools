@@ -1,7 +1,9 @@
-from urllib.parse import unquote
-import domain_check
 import re
+from urllib.parse import unquote
+
 import requests
+
+import domain_check
 
 domains = open("bug-bounty-domains-2.txt", "r")
 for domain in domains.readlines():
@@ -41,4 +43,4 @@ for domain in domains.readlines():
                 except Exception as x:
                     pass
                 for bucket in buckets:
-                     print(bucket)
+                    print(bucket)

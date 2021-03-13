@@ -1,0 +1,5 @@
+microsoft
+google
+apple
+facebook
+instagram
